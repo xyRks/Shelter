@@ -31,8 +31,6 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Header */
 
-
-
 .header {
     width: 100%;
     position: absolute;
@@ -51,13 +49,22 @@ h1,h2,h3,h4,h5,h6 {
 .header-logo {
     display: flex;
     flex-direction: column;
+    transition: all 0.7s ease-out;
     
 }
 
 .header-logo-title {
     color: #F1CDB3;
     margin-bottom: 10px;
+    
 }
+
+.header-logo:hover {
+    transform: scale(1.2);
+}
+
+
+
 
 .logo-title {
     font-family: Georgia;
@@ -93,7 +100,6 @@ h1,h2,h3,h4,h5,h6 {
 .header-menu-list-item {
     display: flex;
     align-items: center;
-
 }
 
 .header-menu-list-item-link {
@@ -101,6 +107,10 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 15px;
     line-height: 160%;
     text-decoration: none;
+}
+
+.header-menu-list-item-link:hover {
+    color: #FAFAFA;
 }
 
 /* Status */
@@ -173,6 +183,10 @@ h1,h2,h3,h4,h5,h6 {
     color: #292929;
 }
 
+.hero-content-button:hover {
+    background: #FDDCC4;
+}
+
 /* About */
 
 .about-wrapper {
@@ -240,6 +254,12 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.45s ease-out;
+}
+
+.frends-content-card:hover {
+    transform: scale(1.1);
+    
 }
 
 .frends-content-title-card {
@@ -265,20 +285,29 @@ h1,h2,h3,h4,h5,h6 {
 
     cursor: pointer;
     outline: none;
+    transition: background-color 0.5s ease-out;
 
     border: 2px solid #F1CDB3;
     background: #F6F6F6;
     box-sizing: border-box;
     border-radius: 100px;
     padding: 23px 19px
+    
+}
+
+.button-slider:hover {
+    background-color: #FDDCC4;
+    
 }
 
 .button-card {
     padding: 15px 45px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
+
     outline: none;
     cursor: pointer;
+    transition: background-color 0.45s ease-out;
 
     text-decoration: none;
     color: #292929;
@@ -289,6 +318,10 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 130%;
 
     letter-spacing: 0.06em;
+}
+
+.button-card:hover {
+    background-color: #FDDCC4;
 }
 
 .frends-button-reset { 
@@ -315,11 +348,11 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.06em;
     
     color: #292929;
-
-
-
 }
 
+.button:hover {
+    background: #FDDCC4;
+}
 
 
 .frends-block-title {
@@ -354,7 +387,6 @@ h1,h2,h3,h4,h5,h6 {
     max-width:  1025px;
 }
 
-
 .faq-title-block {
     margin: 80px auto 60px auto;
     width: 310px;
@@ -383,7 +415,13 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.55s ease-out;
 }
+
+.faq-item:hover {
+    transform: scale(1.3);
+}
+
 
 .faq-subtitle {
     margin-top: 30px;
